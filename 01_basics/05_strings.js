@@ -8,6 +8,12 @@ console.log(myPassion.charAt(1));     // r
 console.log(myPassion.indexOf("t"));  // 3
 console.log(myPassion.length);        // 7
 console.log(myPassion.slice(1,3));    // "ri"
+
+
+
+// The substring() method swaps its two arguments if indexStart is greater than indexEnd, meaning that a string is still returned.
+// If either or both of the arguments are negative or NaN, the substring() method treats them as if they were 0.
+// slice() also treats NaN arguments as 0, but when it is given negative values it counts backwards from the end of the string to find the indexes.
 console.log(myPassion.substring(1,5));   // "riti"
 console.log(myPassion.includes('ti'));   // true
 console.log('      plstrim me    '.trim());    //  "plstrim me"
