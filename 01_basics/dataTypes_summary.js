@@ -16,3 +16,10 @@ const anotherId = Symbol(123)
 
 
 console.log(id, anotherId);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive / call by value)  Heap ( non-primitive / call by ref )
+
+
