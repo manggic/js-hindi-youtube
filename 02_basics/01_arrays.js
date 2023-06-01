@@ -1,5 +1,5 @@
 
-const myArr = [ 1, 2, 3, 4, 5]
+const myArr = [ 1, 2, 3, 4, 5 ]
 
 const Heros = [ 'shaktiman', 'naajraj', 'hatim']
 
@@ -64,3 +64,32 @@ console.log([1,2,3,4].join('-')); // "1-2-3-4"
 console.log([1,3,2,3,4].lastIndexOf(3));  // 3
 
 console.log([1,3,2,3,4].map(ele => ele + 1)); // Array [2, 4, 3, 4, 5]
+
+
+console.log(['miss', 'fish','lease'].pop()) // lease
+
+// The push() method adds the specified elements to the end of an array and returns the new length of the array.
+
+console.log([5,10,15].reduce((acc, currVal) => acc + currVal , 0 )) // 30
+
+
+console.log([5,10,15].reverse()) //  [ 15, 10, 5 ]
+
+
+// The shift() method removes the first element from an array and returns that removed element.
+console.log([5,10,15].shift()) // 5
+
+// The unshift() method adds the specified elements to the beginning of an array and returns the new length of the array.
+
+console.log([5,10,15].slice(1,3)) // [10, 15]
+
+
+
+console.log([5,10,15].some(ele => ele > 11)) // true
+
+
+
+
+
+
+
