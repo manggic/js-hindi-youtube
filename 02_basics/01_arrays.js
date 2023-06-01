@@ -39,7 +39,28 @@ const arr2 = [0, 1, 2, [[[3, 4]]]];
 console.log(arr2.flat(3));  // [ 0, 1, 2, 3, 4 ]
 
 
+let modArr = ''
+let arr = [1,2,3,4,5]
+arr.forEach(ele => modArr = modArr+ele) 
+console.log(modArr)    // "12345"
 
 
+console.log(Array.from('manish'));   //  Array ["m", "a", "n", "i", "s", "h"]
+console.log(Array.from('manish', x => x + 1));    // Array ["m1", "a1", "n1", "i1", "s1", "h1"]
 
 
+console.log(arr.includes(2));   // true
+
+console.log(arr.indexOf(3));   // 2
+
+console.log(Array.isArray([1,2,3])); // true
+
+console.log(Array.isArray(""));  // false
+
+
+console.log([1,2,3,4].join('-')); // "1-2-3-4"
+
+
+console.log([1,3,2,3,4].lastIndexOf(3));  // 3
+
+console.log([1,3,2,3,4].map(ele => ele + 1)); // Array [2, 4, 3, 4, 5]
