@@ -89,6 +89,25 @@ console.log([5,10,15].some(ele => ele > 11)) // true
 
 
 
+// splice(start, deleteCount, item1, item2, itemN)
+// If deleteCount is 0 or negative, no elements are removed.
+// In this case, you should specify at least one new element (see below).
+let spArr = [1,2,3,4,5]
+spArr.splice(2,5, 5)
+
+let spArr1 = [1,5,10]
+spArr1.splice(1, 0, 20)
+
+let spArr2 = [9, 2, 3, 12, 23, 34, 76]
+spArr2.splice(3,-1, 'manis')
+
+let spArr3 = [1,2,3,4,5]
+spArr3.splice(1, 5, 10, 20 , 30, 40 , 50, 60, 70)
+
+console.log(spArr) // [ 1, 2, 5 ]
+console.log(spArr1) // [ 1, 20, 5, 10 ]
+console.log(spArr2)  // [ 9, 2, 3, 'manis', 12, 23, 34, 76 ]
+console.log(spArr3) // [1, 10, 20, 30, 40, 50, 60, 70]
 
 
 
