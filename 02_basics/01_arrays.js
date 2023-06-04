@@ -116,5 +116,13 @@ console.log('og ARRAY', nArr)
 
 console.log(nArr.toString()) // "9,8,7"
 
-console.log(nArr.with(0, 100)); // it returns new ARRAY. [100, 8, 7]   
+// console.log(nArr.with(0, 100)); // it returns new ARRAY. [100, 8, 7]   
+
+
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]
 
