@@ -46,3 +46,21 @@ if(1){
 
 
 
+
+
+sayHello() // this will work fine
+function sayHello(){
+    console.log('hello ji');
+}
+
+
+
+// console.log(myFun());  // ERROR - Cannot access 'myFun' before initialization
+
+
+// function expression
+let myFun = function(){
+    console.log('his story');
+}
+
+
