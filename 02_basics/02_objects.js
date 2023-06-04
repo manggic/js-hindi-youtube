@@ -54,9 +54,10 @@ let objWithSym = {
     [mySym]:'keys'
 }
 
-console.log('grape >>>>>>', objWithSym);
+console.log(objWithSym);
 
 
+const tinderUser = new Object()
 
 
 
