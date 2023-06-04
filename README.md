@@ -25,3 +25,8 @@ While the await keyword suspends the execution of the async function, it does no
 
 This asynchronous behavior of async/await allows JavaScript to efficiently handle multiple tasks concurrently without blocking the main thread and improving responsiveness in scenarios where there are time-consuming operations like network requests or file operations.
 ```
+
+
+* <b> IMPORTANT TO NOTE</b>
+
+1) for of loop can only be used for an iterator ( for ex: array, string )
