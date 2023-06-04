@@ -10,6 +10,10 @@ let obj1 = { match: 'final', player:'virat' }
 let obj2 = { score: 20, player: 'ronaldo' }
 let finalObj = Object.assign(obj1, obj2)
 
+console.log(Object.assign({}, {color:'red', os:'windows' },{ prog_lang:'python' })); // { color: 'red', os: 'windows', prog_lang: 'python' }
+
+console.log({   ...{company:'apple', os:'windows' }, ...{ phone:'samsung' }}); // { company: 'apple', os: 'windows', phone: 'samsung' }
+
 console.log(finalObj)  //   { match: "final", player: "ronaldo", score: 20 }
 
 console.log(Object.entries(obj1)); // [ [ 'match', 'final' ], [ 'player', 'virat' ] ]
