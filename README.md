@@ -1,4 +1,4 @@
-# js-hindi-youtube (18)
+# js-hindi-youtube (22)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 
@@ -30,3 +30,4 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 * <b> IMPORTANT TO NOTE</b>
 
 1) for of loop can only be used for an iterator ( for ex: array, string )
+2) we are not using var because if we initialize any variable with var inside a scope. It is still available outside which create confusion.
