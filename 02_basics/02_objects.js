@@ -64,6 +64,16 @@ console.log(objWithSym);
 const tinderUser = new Object()
 
 
+const course = {
+    courseName :"Js in Hindi",
+    price : 499,
+    courseInstructor: "hitesh",
+    coursePlatform: "youtube"
+}
+
+const { courseInstructor: mySir } = course
+
+console.log(mySir);
 
 
 
