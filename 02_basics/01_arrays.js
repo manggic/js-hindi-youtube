@@ -73,7 +73,7 @@ console.log(['miss', 'fish','lease'].pop()) // lease
 console.log([5,10,15].reduce((acc, currVal) => acc + currVal , 0 )) // 30
 
 
-console.log([5,10,15].reverse()) //  [ 15, 10, 5 ]
+console.log([5,10,15].reverse()) //  [ 15, 10, 5 ] // It's change the original ARRAY
 
 
 // The shift() method removes the first element from an array and returns that removed element.
@@ -110,5 +110,11 @@ console.log(spArr2)  // [ 9, 2, 3, 'manis', 12, 23, 34, 76 ]
 console.log(spArr3) // [1, 10, 20, 30, 40, 50, 60, 70]
 
 
+let nArr = [9,8,7]
+// console.log(nArr.toReversed()) // return array with the changes
+console.log('og ARRAY', nArr)
 
+console.log(nArr.toString()) // "9,8,7"
+
+console.log(nArr.with(0, 100)); // it returns new ARRAY. [100, 8, 7]   
 
