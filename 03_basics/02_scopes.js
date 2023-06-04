@@ -14,5 +14,35 @@ if(1){
 
 // console.log(a);
 // console.log(b);
-console.log(c);
+// console.log(c);
+
+
+
+function one(){
+    let name = "hitesh"
+
+    function two(){
+      let website = "youtube" 
+      console.log(name);  // hitesh | As child can ask elder to give ice-cream
+    }
+    // console.log(website); // ERROR - two() is another diff scope we can't access it parameters
+    two()
+}
+
+// one()
+
+
+
+if(1){
+     let player = 'virat'
+     if(true){
+        let rapper = "badshah"
+        console.log(`Both ${player} and ${rapper} are top class of their fields`);
+     }
+    //  console.log(rapper); ERROR - out of scope
+}
+// console.log(player); ERROR - out of scope
+
+
+
 
