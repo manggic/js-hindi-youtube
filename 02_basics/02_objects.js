@@ -45,3 +45,35 @@ Object.isFrozen(obj1)
 
 console.log(Object.keys({count: 10, isClicked: false })); // [ 'count', 'isClicked' ]
 console.log(Object.values({ accountStatus:'active', isLoggedIn: true })); // [ 'active', true ]
+
+
+let mySym = Symbol('myKeys')
+
+let objWithSym = {
+    browser : 'Chrome',
+    [mySym]:'keys'
+}
+
+console.log('grape >>>>>>', objWithSym);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
