@@ -17,3 +17,13 @@ we use IIFE
 ((props) => {
     console.log(`${props}`);
 })('2nd call to IIFE')
+
+
+
+
+// The nullish coalescing (??) operator is a logical operator that returns 
+// its right-hand side operand when its left-hand side operand is null or undefined,
+// and otherwise returns its left-hand side operand.
+
+console.log(null ?? 20);  // 20
+console.log(undefined ?? 'manish');  // "manish"
