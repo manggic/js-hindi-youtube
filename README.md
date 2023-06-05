@@ -1,4 +1,4 @@
-# js-hindi-youtube (29)
+# js-hindi-youtube (30)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
@@ -32,17 +32,24 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 ![Alt text](/images/02_Execution_Context.png)
 
 
-## Iteration through object can be done by following way
+## Iteration through object can be done by following ways
 ```
 let obj = {
   color : "red",
   state:"maharashtra"
 }
 
-
 for(let [key, values] of Object.entries(obj)){
   console.log(key , values)
 }
+
+for(let i in obj){
+  console.log(i, obj[i])
+}
+
+output:
+color red
+state maharashtra
 ```
 
 ## Methods we can use for looping Array 
@@ -58,6 +65,10 @@ for(let i of arr){
 console.log(i)
 }
 
+output:
+js
+py
+cpp
 ```
 
 
