@@ -78,4 +78,5 @@ cpp
 2) we are not using var because if we initialize any variable with var inside a scope. It is still available outside which create confusion.
 3) In browser, global object is Window hence this refers to browser window object.
 4) These are falsy values: false, 0, -0, "", null, undefined, NaN
-
+5) forEach() always returns undefined
+6) To return an object from arrow function, const arr = () => ({playerName :"ronaldo"})
