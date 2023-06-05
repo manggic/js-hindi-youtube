@@ -29,6 +29,7 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 
 ### Execution Context
 ![Alt text](/images/01_Execution_Context.png)
+![Alt text](/images/02_Execution_Context.png)
 
 
 
