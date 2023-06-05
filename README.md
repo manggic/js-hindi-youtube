@@ -1,7 +1,7 @@
-# js-hindi-youtube (23)
+# js-hindi-youtube (25)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
-
+* JavaScript is a synchronous single-threaded language
 
 ### JS is single thread or multiple thread ?
 ```
@@ -27,8 +27,15 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 ```
 
 
+### Execution Context
+![Alt text](/images/01_Execution_Context.png)
+
+
+
 * <b> IMPORTANT TO NOTE</b>
 
 1) for of loop can only be used for an iterator ( for ex: array, string )
 2) we are not using var because if we initialize any variable with var inside a scope. It is still available outside which create confusion.
 3) In browser, global object is Window hence this refers to browser window object.
+
+
