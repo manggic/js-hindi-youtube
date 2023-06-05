@@ -31,3 +31,4 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 
 1) for of loop can only be used for an iterator ( for ex: array, string )
 2) we are not using var because if we initialize any variable with var inside a scope. It is still available outside which create confusion.
+3) In browser, global object is Window hence this refers to browser window object.
