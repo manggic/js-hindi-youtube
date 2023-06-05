@@ -1,4 +1,4 @@
-# js-hindi-youtube (25)
+# js-hindi-youtube (29)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
