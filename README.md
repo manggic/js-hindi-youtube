@@ -32,6 +32,34 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 ![Alt text](/images/02_Execution_Context.png)
 
 
+## Iteration through object can be done by following way
+```
+let obj = {
+  color : "red",
+  state:"maharashtra"
+}
+
+
+for(let [key, values] of Object.entries(obj)){
+  console.log(key , values)
+}
+```
+
+## Methods we can use for looping Array 
+
+```
+let arr = ['js','py','cpp']
+
+for(let i in arr){
+  console.log(arr[i])
+}
+
+for(let i of arr){
+console.log(i)
+}
+
+```
+
 
 * <b> IMPORTANT TO NOTE</b>
 
