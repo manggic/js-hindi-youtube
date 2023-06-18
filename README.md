@@ -1,4 +1,4 @@
-# js-hindi-youtube (30)
+# js-hindi-youtube (35)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
@@ -72,6 +72,30 @@ cpp
 ```
 
 
+
+```
+const title = <h1 id="title" class="heading">Learning, DOM on chai aur code<span style="display: none">click here </span></h1>
+
+title.innerHTML 
+'Learning, DOM on chai aur code<span style="display: none">click here </span>'
+
+title.textContent
+'Learning, DOM on chai aur codeclick here'
+
+title.innerText
+'Learning, DOM on chai aur code'
+
+
+let arrOfHTML = document.getElementsByClassName('list')
+Its return HTMLCollection which can be converted to array by using Array.from() methods
+
+
+let arrOfNodes = document.querySelectorAll('.list')
+It return NodeList which has inbuild forEach property
+```
+
+
+
 * <b> IMPORTANT TO NOTE</b>
 
 1) for of loop can only be used for an iterator ( for ex: array, string )
@@ -80,3 +104,19 @@ cpp
 4) These are falsy values: false, 0, -0, "", null, undefined, NaN
 5) forEach() always returns undefined
 6) To return an object from arrow function, const arr = () => ({playerName :"ronaldo"})
+7) For getting text data of any node in HTML
+- innerHTML
+- innerText
+- textContent
+8) innerHTML and outerHTML diff
+```
+<div class="outer"><span class="inner"></span></div>
+
+console.log(document.querySelector('.outer').innerHTML);  // <span class="inner"></span>
+
+
+console.log(document.querySelector('.outer').outerHTML);  //  <div class="outer"><span class="inner"></span></div>
+
+```
+
+

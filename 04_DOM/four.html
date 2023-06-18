@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur code | DOM</title>
+  </head>
+  <body>
+    <ul class="unorderlist">
+      <li>javascript</li>
+      <li>python</li>
+      <li>java</li>
+      <li>cpp</li>
+    </ul>
+
+    <input type="text" id="input" onkeyup="handleEnter(event)" />
+    <button onclick="addToList()">Add</button>
+  </body>
+
+  <script>
+    // handle any key pressed as well enter key
+    function handleEnter(event) {
+      event.preventDefault();
+      event.keyCode === 13
+        ? addToList(document.getElementById("input").value)
+        : (event.target.value = event.target.value);
+    }
+
+    // add new item to the list
+    function addToList() {
+      if (document.getElementById("input").value) {
+        addLang(document.getElementById("input").value);
+        document.getElementById("input").value = "";
+      } else {
+        alert("pls provide input");
+      }
+    }
+
+    function addLang(lang) {
+      const unOrderList = Array.from(
+        document.getElementsByClassName("unorderlist")
+      )[0];
+
+      let li = document.createElement("li");
+      let textNode = document.createTextNode(lang);
+      li.appendChild(textNode);
+      unOrderList.appendChild(li);
+    }
+
+    // console.log('document.querySelector("li:last-child")',document.querySelector("li:last-child"));
+
+    // addLang("python");
+
+    // Edit
+
+    let li = document.querySelector("li:nth-child(2)");
+
+    let newLi = document.createElement("li");
+
+    newLi.textContent = "mojo";
+
+    li.replaceWith(newLi);
+
+    console.log("After 1st edit ", document.querySelector("li:last-child"));
+
+    // edit 2
+
+    let firstLang = document.querySelector("li:first-child");
+
+    firstLang.innerHTML = "TypeScript";
+
+    document.querySelector("li:nth-child(3)").outerHTML = "<li>hello</li>";
+
+    console.log("After 2nd edit ", document.querySelector("li:last-child"));
+
+    // remove
+
+    document.querySelector("li:last-child").remove();
+  </script>
+</html>
