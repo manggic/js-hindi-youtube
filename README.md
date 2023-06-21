@@ -33,7 +33,7 @@ This asynchronous behavior of async/await allows JavaScript to efficiently handl
 
 
 ## Iteration through object can be done by following ways
-```
+```javascript
 let obj = {
   color : "red",
   state:"maharashtra"
@@ -54,7 +54,7 @@ state maharashtra
 
 ## Methods we can use for looping Array 
 
-```
+```javascript
 let arr = ['js','py','cpp']
 
 for(let i in arr){
