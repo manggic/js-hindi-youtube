@@ -165,6 +165,9 @@ div.appendChild(p);
 ```
 When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
 A bubbling event goes from the target element straight up. Normally it goes upwards till <html>, and then to document object, and some events even reach window, calling all handlers on the path.
+
+NOTE:
+event capture is opposite of event bubbling
 ```
 
 10) event.stopPropagation()
@@ -182,3 +185,9 @@ preventDefault() is a JavaScript method that allows you to stop the default beha
 stopImmediatePropagation() is a method in JavaScript that not only stops the propagation of an event to parent elements but also prevents any other event handlers attached to the same element from being executed
 ```
 
+13) Third parameter of addEventListener (default : false)   <strong>( useCapture )</strong> 
+```
+if true, useCapture indicates that the user wishes to initiate capture (top to bottom approach).
+Default is false, it's indicates that the user wishes to initiate bubbling ( bottom to top approach )
+
+```
