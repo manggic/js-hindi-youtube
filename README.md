@@ -202,3 +202,23 @@ Example :
 <div id="myElement">Hello, world!</div>
 document.getElementById('myElement').remove();
 ```
+
+15) e.target.tagName
+```
+<div id="parent1">parent1</div>
+<button id="parent2">parent2</button>
+<span id="child">child</span>
+
+
+document.getElementById("child").addEventListener("click", function (e) {
+    console.log("console", e.target.tagName);  // DIV
+});
+
+document.getElementById("parent1").addEventListener("click", function (e) {
+    console.log("console", e.target.tagName);  // BUTTON
+});
+
+document.getElementById("parent2").addEventListener("click", function (e) {
+    console.log("console", e.target.tagName);  // SPAN
+});
+```

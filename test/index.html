@@ -7,27 +7,24 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="parent1">parent1</div>
 
+    <button id="parent2">parent2</button>
 
-    <button>remove it</button>
-    <div id="parent2">
-      <div id="parent1">
-        <div id="child">child</div>
-      </div>
-    </div>
+    <span id="child">child</span>
   </body>
 
   <script>
-    
+    document.getElementById("child").addEventListener("click", function (e) {
+      console.log("console", e.target.tagName);
+    });
 
+    document.getElementById("parent1").addEventListener("click", function (e) {
+      console.log("console", e.target.tagName);
+    });
 
-
-    console.log('document of button',document.getElementsByTagName('button'));
-
-    document.getElementsByTagName('button')[0].addEventListener('click', function(){
-
-    document.getElementById('parent2').remove()
-    })
-
+    document.getElementById("parent2").addEventListener("click", function (e) {
+      console.log("console", e.target.tagName);
+    });
   </script>
 </html>
