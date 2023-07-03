@@ -8,6 +8,8 @@
   </head>
   <body>
 
+
+    <button>remove it</button>
     <div id="parent2">
       <div id="parent1">
         <div id="child">child</div>
@@ -16,20 +18,16 @@
   </body>
 
   <script>
-    document.querySelector("#child").addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation()
-      console.log("child");
-    });
+    
 
-    document.querySelector("#parent1").addEventListener("click", function (e) {
-      e.preventDefault();
-      console.log("parent1");
-    });
 
-    document.querySelector("#parent2").addEventListener("click", function (e) {
-      e.preventDefault();
-      console.log("parent2");
-    });
+
+    console.log('document of button',document.getElementsByTagName('button'));
+
+    document.getElementsByTagName('button')[0].addEventListener('click', function(){
+
+    document.getElementById('parent2').remove()
+    })
+
   </script>
 </html>

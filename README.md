@@ -191,3 +191,14 @@ if true, useCapture indicates that the user wishes to initiate capture (top to b
 Default is false, it's indicates that the user wishes to initiate bubbling ( bottom to top approach )
 
 ```
+
+14) .remove()
+```
+The .remove() method in JavaScript is used to remove an element from the DOM (Document Object Model), effectively deleting it from the webpage. It is available on DOM nodes and allows you to remove an element and all of its child elements.
+
+
+Example :
+
+<div id="myElement">Hello, world!</div>
+document.getElementById('myElement').remove();
+```
