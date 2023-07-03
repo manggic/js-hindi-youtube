@@ -96,6 +96,41 @@ It return NodeList which has inbuild forEach property
 
 
 
+```
+<body>
+    <h1>manish</h1>
+    <span> - </span>
+    <h1>pooja</h1>
+</body>
+
+
+- script
+setTimeout(() => {
+      document.querySelector("h1").innerHTML = "I WILL change everything";
+
+      document.querySelector("body").innerHTML = "";
+
+      const div = document.createElement("div");
+      const p = document.createElement("p");
+
+      p.innerHTML = "i m losing my mind and worried";
+
+      div.appendChild(p);
+
+      console.log('div', div);
+
+      // document.querySelector('body').replaceChild(div)
+      document.querySelector('body').replaceChildren(div)
+
+
+
+      // document.querySelector("body").appendChild(div);
+    }, 5000);
+
+
+```
+
+
 * <b> IMPORTANT TO NOTE</b>
 
 1) for of loop can only be used for an iterator ( for ex: array, string )
@@ -116,7 +151,28 @@ console.log(document.querySelector('.outer').innerHTML);  // <span class="inner"
 
 
 console.log(document.querySelector('.outer').outerHTML);  //  <div class="outer"><span class="inner"></span></div>
-
 ```
 
+9)  document.querySelector("body").replaceChildren(div)
+```
+const div = document.createElement("div");
+const p = document.createElement("p");
+p.innerHTML = "i m losing my mind and worried";
+div.appendChild(p);
+```
 
+10) Event bubbling
+```
+When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+A bubbling event goes from the target element straight up. Normally it goes upwards till <html>, and then to document object, and some events even reach window, calling all handlers on the path.
+```
+
+10) event.stopPropagation()
+```
+stopPropagation() is a method in JavaScript that prevents an event from triggering the same event on parent elements
+```
+
+11) e.preventDefault()
+``` 
+preventDefault() is a JavaScript method that allows you to stop the default behavior of an event from occurring.
+```
