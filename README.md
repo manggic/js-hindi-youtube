@@ -176,3 +176,9 @@ stopPropagation() is a method in JavaScript that prevents an event from triggeri
 ``` 
 preventDefault() is a JavaScript method that allows you to stop the default behavior of an event from occurring.
 ```
+
+12) stopImmediatePropagation()
+```
+stopImmediatePropagation() is a method in JavaScript that not only stops the propagation of an event to parent elements but also prevents any other event handlers attached to the same element from being executed
+```
+
