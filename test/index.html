@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chai Aur Code</title>
   </head>
   <body>
-    <div id="parent1">parent1</div>
+    <h1>On Hitesh Chaudhary Chai aur code channel learning topics Async</h1>
 
-    <button id="parent2">parent2</button>
-
-    <span id="child">child</span>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div></div>
   </body>
 
   <script>
-    document.getElementById("child").addEventListener("click", function (e) {
-      console.log("console", e.target.tagName);
+    let intervalId = "";
+    let count = 0;
+    document.querySelector("#start").addEventListener("click", () => {
+      intervalId = setInterval(() => {
+        document.querySelector("body").style.background =
+          "rgb(" +
+          Math.random() * 300 +
+          "," +
+          Math.random() * 100 +
+          "," +
+          Math.random() * 100 +
+          ")";
+      }, 1000);
     });
 
-    document.getElementById("parent1").addEventListener("click", function (e) {
-      console.log("console", e.target.tagName);
-    });
-
-    document.getElementById("parent2").addEventListener("click", function (e) {
-      console.log("console", e.target.tagName);
+    document.querySelector("#stop").addEventListener("click", () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
     });
   </script>
 </html>
