@@ -222,3 +222,8 @@ document.getElementById("parent2").addEventListener("click", function (e) {
     console.log("console", e.target.tagName);  // SPAN
 });
 ```
+
+16) Everything in javascript is object
+
+
+![Alt text](/images/Every_thing_is_object.png)
