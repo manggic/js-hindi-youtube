@@ -1,4 +1,4 @@
-# js-hindi-youtube (41 - fetch)
+# js-hindi-youtube (43 - Prototype)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
