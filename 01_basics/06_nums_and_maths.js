@@ -11,7 +11,7 @@ console.log(Math.floor(5.7)); // 5
 
 
 console.log(Math.max(5, 10, 1, 3, 21)); // 21
-console.log(Math.min(5, 10, 1, 3, 21)); // 21
+console.log(Math.min(5, 10, 1, 3, 21)); // 1
 
 
 const Min = 10

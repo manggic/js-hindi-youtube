@@ -32,5 +32,5 @@ console.log('myname'.padEnd(10,'*')) //  "myname****"
 console.log('myname'.padStart(10,'*')) // "****myname"
 console.log('myname'.repeat(3)) // "mynamemynamemyname"
 
-// Tt return the index of the first match between the regular expression and the given string, or -1 if no match was found.
+// It return the index of the first match between the regular expression and the given string, or -1 if no match was found.
 console.log('myname'.search(/a/g)) // 3
