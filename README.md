@@ -1,4 +1,4 @@
-# js-hindi-youtube (44 - Call and this)
+# js-hindi-youtube (47 - Now u no objects)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
@@ -227,3 +227,16 @@ document.getElementById("parent2").addEventListener("click", function (e) {
 
 
 ![Alt text](/images/Every_thing_is_object.png)
+
+
+17) static keyword in class
+```
+the static keyword is used to indicate that a property or method belongs to the class itself, rather than its instances (objects).
+```
+
+18) Bind diff betw arrow and function expression
+```
+Function Expression: A function expression creates its own this context, which is determined when the function is called. The value of this inside the function can change depending on how the function is invoked.
+
+Arrow Function: An arrow function does not create its own this context. Instead, it captures the this value from the surrounding context (lexical scope). This behavior makes arrow functions especially useful for certain scenarios, like event listeners, where you want to retain the this context from the surrounding scope.
+```

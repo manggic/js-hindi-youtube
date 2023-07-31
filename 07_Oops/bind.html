@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">clicked</button>
+  </body>
+  <!-- In the provided code, this.server is undefined in the handleClick method because of how JavaScript handles the context of this. When you define the handleClick method as a class method in the React class, it creates a new context for the function. As a result, this inside the handleClick method no longer refers to the React instance where this.server is defined. -->
+  <script>
+    class React {
+      constructor() {
+        this.library = "react";
+        this.server = "http://localhost:3000";
+
+        document
+          .querySelector("#btn")
+          .addEventListener("click", this.handleClick.bind(this));
+      }
+
+      handleClick() {
+        console.log("cliced");
+        console.log("server name", this.server);
+      }
+    }
+
+    const code = new React();
+  </script>
+</html>
