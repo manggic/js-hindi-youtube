@@ -1,4 +1,4 @@
-# js-hindi-youtube (47 - Now u no objects)
+# js-hindi-youtube (49 - closure)
 
 * JavaScript original documentation link : https://tc39.es/ecma262/
 * JavaScript is a synchronous single-threaded language
