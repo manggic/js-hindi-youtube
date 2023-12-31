@@ -240,3 +240,16 @@ Function Expression: A function expression creates its own this context, which i
 
 Arrow Function: An arrow function does not create its own this context. Instead, it captures the this value from the surrounding context (lexical scope). This behavior makes arrow functions especially useful for certain scenarios, like event listeners, where you want to retain the this context from the surrounding scope.
 ```
+
+19) Writing async in function will always return Promise
+
+```javascript
+
+async function getData(){
+  return "returning Promise"
+}
+
+const data = getData()
+
+data.then(res => console.log(res)) // returning Promise
+```
